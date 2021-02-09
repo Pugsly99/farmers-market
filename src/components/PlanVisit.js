@@ -324,7 +324,7 @@ function PlanVisit() {
         )},
         {availableProduce.map((monthProduce, index) =>
           <MonthProduce month={monthProduce.month}
-            selection={monthProduce.selection}
+            selection={monthProduce.selection.map(e => e.concat(", "))}
             key={index} />
         )}
     </>
