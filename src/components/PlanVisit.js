@@ -324,9 +324,8 @@ function PlanVisit() {
         )},
         {availableProduce.map((monthProduce, index) =>
           <MonthProduce month={monthProduce.month}
-            
-          />
-
+            selection={monthProduce.selection}
+            key={index} />
         )}
     </>
   );
