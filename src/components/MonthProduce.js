@@ -12,8 +12,8 @@ function MonthProduce(props){
 }
 
 MonthProduce.propTypes = {
-  day: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
+  month: PropTypes.string.isRequired,
+  selection: PropTypes.array.isRequired,
 };
 
 
