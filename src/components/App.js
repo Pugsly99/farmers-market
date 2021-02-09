@@ -1,16 +1,12 @@
 import React from "react";
 import Header from "./Header";
-import PlanVisit from "./PlanVisit";
-import About from "./About";
-import NewContactForm from "./NewContactForm";
+import ViewControl from "./ViewControl";
 
 function App() {
   return (
     <>
       <Header />
-      <PlanVisit />
-      <About />
-      <NewContactForm />
+      <ViewControl />
     </>
   );
 }
