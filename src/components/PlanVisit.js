@@ -3,6 +3,7 @@ import DayLocation from "./DayLocation";
 import {marketSchedule} from "./data/market-schedule";
 import MonthProduce from "./MonthProduce";
 import {availableProduce} from "./data/seasonal-produce";
+import ProduceControl from "./ProduceControl";
 
 function PlanVisit() {
   return (
@@ -15,12 +16,15 @@ function PlanVisit() {
             booth={dayLocation.booth}
             key={index} />
 
-        )},
+        )}
+
         {availableProduce.map((monthProduce, index) =>
           <MonthProduce month={monthProduce.month}
             selection={monthProduce.selection.map(e => e.concat(", "))}
             key={index} />
         )}
+        
+        <ProduceControl />
     </>
   );
 }
